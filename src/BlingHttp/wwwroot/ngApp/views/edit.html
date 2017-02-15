@@ -1,0 +1,13 @@
+﻿<h2>Edit Movie {{controller.movie.title}}</h2>
+
+<form ng-submit="controller.movie()">
+<div>
+    <lable for="title">Title:</lable>
+    <input type="text" id="title" ng-model="controller.movie.title" />
+</div>
+<div>
+    <lable for="director">Director:</lable>
+    <input type="text" id="director" ng-model="controller.movie.director" />
+</div>
+<input type="submit" value="Save" />
+</form>
